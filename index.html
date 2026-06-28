@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GEL BLASTER LIST</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">MID END TO HIGH END<span>GEL BLASTER</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>ELITE PERFORMANCE.<br>BUILT FOR BATTLE.</h1>
+                <p>Premium Gel Blasters for Tactical Play.</p><a
+                    href="#catalogGrid"
+                    class="shop-btn"
+                >SHOP NOW</a><input
+                    id="searchBar"
+                    placeholder="Search tactical units..."
+                ><div class="filters">
+                    <button onclick='filterUnits("all")'>ALL</button>
+                    <button onclick='filterUnits("high")'>HIGH END</button>
+                    <button onclick='filterUnits("mid")'>MID END</button>
+                    <button onclick='filterUnits("graffiti")'>GRAFFITI</button>
+                </div>
+            </div>
+        </section>
+        <section class="catalog-grid" id="catalogGrid"></section>
+        <div class="modal" id="unitModal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()"
+                >×</span><div class="slider">
+                    <button class="arrow left" onclick="prevImage()">
+                        ❮
+                    </button><img id="modalImage"><button
+                        class="arrow right"
+                        onclick="nextImage()"
+                    >
+                        ❯
+                    </button>
+                </div>
+                <button class="zoom-btn" onclick="zoomImage()">
+                    ZOOM IMAGE
+                </button>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDesc"></p>
+                <div class="stats" id="modalStats"></div>
+                <div class="feature-section">
+                    <h3>FEATURES</h3>
+                    <ul id="featureList"></ul>
+                </div>
+                <div class="feature-section">
+                    <h3>FREEBIES</h3>
+                    <ul id="freebieList"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="zoom-modal" id="zoomModal">
+            <span class="close-btn" onclick="closeZoom()">×</span><img
+                id="zoomedImage"
+            >
+        </div>
+        <script src="data.js"></script>
+<script src="script.js"></script>
+
+<a href="https://www.tiktok.com/@mr.ramices"
+   target="_blank"
+   class="floating-btn tiktok-btn">
+   🎵 TikTok
+</a>
+
+<a href="https://m.me/YOUR_FACEBOOK_PAGE"
+   target="_blank"
+   class="floating-btn messenger-btn">
+   💬 Messenger
+</a>
+
+<a href="contact.html"
+   class="floating-btn contact-btn">
+   📞 Contact
+</a>
+
+</body>
+</html>
